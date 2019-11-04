@@ -31,9 +31,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download math result for job 2
-        uses: actions/download-artifact@v1
-        with:
-          name: public
+      uses: actions/download-artifact@v1
+      with:
+        name: public
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
       with:
