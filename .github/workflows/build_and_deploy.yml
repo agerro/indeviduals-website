@@ -35,9 +35,9 @@ jobs:
       with:
         name: public
     - name: Install Hugo
-        run: |
-          ll
-          ll indeviduals-website
+      run: |
+        ll
+        ll indeviduals-website
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
       with:
