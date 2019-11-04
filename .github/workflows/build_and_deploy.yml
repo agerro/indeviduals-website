@@ -34,6 +34,10 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: public
+    - name: Install Hugo
+        run: |
+          ll
+          ll indeviduals-website
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
       with:
