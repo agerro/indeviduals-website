@@ -22,9 +22,9 @@ jobs:
       - name: Hugo Build
         run: $HOME/hugo -v
 
-      - name: S3 push
       - uses: actions/checkout@master
       - uses: jakejarvis/s3-sync-action@master
+      - name: S3 push
         with:
           args: --acl public-read --follow-symlinks --delete --exclude '.git/*'
         env:
