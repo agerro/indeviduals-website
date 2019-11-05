@@ -6,7 +6,7 @@ on:
     - master
 jobs:
   build:
-    name: Build
+    name: Build and deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -20,32 +20,13 @@ jobs:
           HUGO_VERSION: 0.54.0
       - name: Hugo Build
         run: $HOME/hugo -v
-      - name: Archive build artifacts
-        uses: actions/upload-artifact@master
+      - uses: actions/checkout@master
+      - uses: jakejarvis/s3-sync-action@master
         with:
-          name: public
-          path: public
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Download public folder from build stage
-      uses: actions/download-artifact@master
-      with:
-        name: public
-        path: public
-    - name: Install Hugo
-      run: |
-        ls public
-        pwd
-    - uses: actions/checkout@master
-    - uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks --delete --exclude '.git/*'
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-north-1'   # optional: defaults to us-east-1
-        SOURCE_DIR: 'public'      # optional: defaults to entire repository
+          args: --acl public-read --follow-symlinks --delete --exclude '.git/*'
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'eu-north-1'   # optional: defaults to us-east-1
+          SOURCE_DIR: 'public'      # optional: defaults to entire repository
