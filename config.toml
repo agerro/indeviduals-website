@@ -1,7 +1,6 @@
-baseurl = "https://www.indeviduals.com/"
+baseurl = "https://www.indeviduals.com"
 languageCode = "en-us"
 theme = "hello-friend-ng"
-uglyurls = true
 
 [author]
   name = "Marcus Karlsson"
@@ -44,27 +43,27 @@ uglyurls = true
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = "/about/"
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
-        url = "/showcase"
+        url = "/showcase/"
       [[languages.en.menu.main]]
         identifier = "blog"
         name       = "Blog"
-        url        = "/posts"
+        url        = "/posts/"
 
 # And you can even create generic menu
 [menu]
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "/about"
+    url        = "/about/"
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts"
+    url        = "/posts/"
   [[menu.main]]
     identifier = "showcase"
     name = "Showcase"
-    url = "/showcase"
+    url = "/showcase/"
