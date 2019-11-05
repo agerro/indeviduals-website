@@ -10,8 +10,10 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v1
+        with:
+          submodules: recursive
 
       - name: Install Hugo
         run: |

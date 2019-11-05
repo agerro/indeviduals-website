@@ -10,3 +10,7 @@ tags:
 
 This is the start of this blog
 
+- hugo doesn't chechin submodules from theme on actions
+- actions: uses will mess you up a bit
+-
+
