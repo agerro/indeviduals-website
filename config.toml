@@ -1,6 +1,7 @@
-baseurl = "/"
+baseurl = "https://www.indeviduals.com/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
+uglyurls = true
 
 [author]
   name = "Marcus Karlsson"
