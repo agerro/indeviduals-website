@@ -20,6 +20,12 @@ jobs:
           HUGO_VERSION: 0.54.0
       - name: Hugo Build
         run: $HOME/hugo -v
+      - name: Publish to S3
+        run: $HOME/hugo -v
+
+
+
+
       - uses: actions/checkout@master
       - uses: jakejarvis/s3-sync-action@master
         with:
@@ -29,4 +35,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'eu-north-1'   # optional: defaults to us-east-1
-          SOURCE_DIR: 'public'      # optional: defaults to entire repository
+          SOURCE_DIR: './public'      # optional: defaults to entire repository
