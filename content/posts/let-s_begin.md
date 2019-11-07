@@ -5,12 +5,20 @@ draft: false
 toc: false
 images:
 tags:
-  - untagged
+  - Github
+  - actions
+  - AWS
+  - s3
+  - cloudfront
+  - hugo
 ---
 
 This is the start of this blog
 
-- hugo doesn't chechin submodules from theme on actions
-- actions: uses will mess you up a bit
+
+## What I learned
+
+- hugo doesn't checkin clone theme repositories properly, so using submodule will actually save you a lot of confusion
+- GitHub Actions: the statement **uses** might mess you up a bit
 -
 
