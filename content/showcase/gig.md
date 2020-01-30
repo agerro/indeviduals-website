@@ -10,11 +10,11 @@ My take on learning GoLang a bit more.
 
 I needed a goal to build towards, and setting the goal to build the most un-necessary tool ever (since it basically can be replaced with and alias in your shell of choice) was perfect.
 
-And so, *gig* was born.
+And so, `gig` was born.
 
 ## What is it?
 
-*gig* (Git IGnore) is a tool built in Go, which works based on the fantastic website gitignore.io
+`gig` (Git IGnore) is a tool built in Go, which works based on the fantastic website gitignore.io
 
 The concept was to have a tool that you could query the websites "api" and get a .gitignore file downloaded based on the languages you gave it as input.
 
