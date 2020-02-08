@@ -1,4 +1,4 @@
-![](https://github.com/agerro/indeviduals-website/workflows/.github/workflows/build_and_deploy.yml/badge.svg)
+![Upload Website](https://github.com/agerro/indeviduals-website/workflows/Upload%20Website/badge.svg?branch=master)
 
 # indeviduals-website
 Hugo based code for my website www.indeviduals.com
