@@ -6,7 +6,7 @@ draft: false
 
 ## Who am I
 
-My name is Marcus Karlsson and I'm a 27 years old tech enthusiast living and working in Gothenburg, Sweden.
+My name is Marcus Karlsson and I'm a 26 years old tech enthusiast living and working in Gothenburg, Sweden.
 
 On my spare time, I spend a lot of my time making music and performing as a DJ. 
 
