@@ -1,12 +1,12 @@
 ---
 title: "About"
-date: 2020-01-30T22:00:44+01:00
+date: 2023-09-05T22:00:44+01:00
 draft: false
 ---
 
 ## Who am I
 
-My name is Marcus Karlsson and I'm a 26 years old tech enthusiast living and working in Gothenburg, Sweden.
+My name is Marcus Karlsson and I'm a 30 years old tech enthusiast living and working in Gothenburg, Sweden.
 
 On my spare time, I spend a lot of my time making music and performing as a DJ. 
 
@@ -14,8 +14,8 @@ I'm always working on a project involving some sort of code. I have listed some 
 
 ## What do I do
 
-I'm working as Consultant for Cybercom Group in Gothenburg, Sweden.
-At Cybercom, I work as a Cloud consultant focusing mostly on AWS, but also many other areas surounding cloud in general.
+I'm working as Innovation Leader and Cloud Consultant for Knowit in Gothenburg, Sweden.
+At Knowit, I work as a Cloud consultant focusing mostly on AWS, but also many other areas surounding cloud in general.
 
 Assignments at Cybercom for me ranges between helping new customers adopt their business to Cloud, and adjusting their daily workflows accordingly.
 We are also assisting a lot of our customers that either want to take the journey in exploring containerinzing their codebase and moving to Kubernetes, but also for those who has invested in Kubernetes but wants to take it to the next level.
